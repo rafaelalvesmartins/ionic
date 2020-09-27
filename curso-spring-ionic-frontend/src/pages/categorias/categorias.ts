@@ -18,7 +18,7 @@ import { CategoriaService } from '../../services/domain/categoria.service';
 })
 export class CategoriasPage {
 
-  infinityUrl: string = API_CONFIG.infinityBaseUrl;
+  serverBaseUrl: string = API_CONFIG.serverBaseUrl;
   items: CategoriaDTO[];
 
 
@@ -33,7 +33,7 @@ export class CategoriasPage {
       this.items = response;
     },
       error => {
-        console.log(error);
+        //console.log(error);
       });
   }
 
