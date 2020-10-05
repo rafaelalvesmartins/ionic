@@ -7,7 +7,7 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-  <button ion-item *ngFor="let item of items" (click)="showProdutos()">
+  <button ion-item *ngFor="let item of items" (click)="showProdutos(item.id)">
     <ion-thumbnail item-left>
       <img src="{{serverBaseUrl}}cat{{item.id}}.jpg">
     </ion-thumbnail>
