@@ -37,6 +37,9 @@ export class ProdutosPage {
       item.imageUrl = `${API_CONFIG.serverBaseUrl}prod${item.id}-small.jpg`;
     }
   }
-
+  
+  showDetail(){
+    this.navCtrl.push('ProdutoDetailPage');
+  }
 
 }
