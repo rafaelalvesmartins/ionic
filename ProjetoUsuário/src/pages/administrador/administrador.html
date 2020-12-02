@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Administrador</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-item *ngFor="let item of items">
+    <ion-thumbnail item-left>
+      <img src="../../assets/imgs/avatar.png">
+    </ion-thumbnail>
+    <h2>{{item.nome}}</h2> - <h3>Tel. {{item.telefone}}</h3>
+  </button>
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Usuarios</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <img  [src]="'assets/imgs/user.jpg'"/>
+    <ion-card-content>
+      <ion-card-title>
+        {{nome}}
+        </ion-card-title>
+        <button ion-item *ngFor="let item of items" >
+          <ion-thumbnail item-left>
+            <img src="assets/imgs/telefone.png">
+          </ion-thumbnail>
+          <h2>{{item.telefone}}</h2>
+        </button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
