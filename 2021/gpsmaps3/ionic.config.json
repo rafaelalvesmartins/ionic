@@ -1,0 +1,7 @@
+{
+  "name": "gpsmaps3",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

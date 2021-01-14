@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Giroscópio e Acelerômetro
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h2>Giroscópio</h2>
+    <ion-item> 
+      <ion-label>X</ion-label>
+      {{x}}
+    </ion-item>
+    <ion-item> 
+      <ion-label>Y</ion-label>
+      {{y}}
+    </ion-item>
+    <ion-item> 
+      <ion-label>Z</ion-label>
+      {{z}}
+    </ion-item>
+    <ion-item> 
+      <ion-label>timestamp</ion-label>
+      {{timestamp}}
+    </ion-item>
+    <button ion-button (click)="giroscopioCurrent()" >Giroscópio - Current</button><br/>
+    <button ion-button (click)="giroscopioWatch()">Giroscópio - Watch</button>
+    
+
+    <h2>Acelerômetro</h2>
+    <ion-item> 
+      <ion-label>X</ion-label>
+      {{accX}}
+    </ion-item>
+    <ion-item> 
+      <ion-label>Y</ion-label>
+      {{accY}}
+    </ion-item>
+    <ion-item> 
+      <ion-label>Z</ion-label>
+      {{accZ}}
+    </ion-item>
+    <button ion-button (click)="acelerometro()" >Acelerômetro</button><br/>
+</ion-content>                  
