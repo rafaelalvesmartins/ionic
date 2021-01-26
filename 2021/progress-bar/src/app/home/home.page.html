@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Barra Progressiva
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Barra Progressiva</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    Barra:
+    <ion-progress-bar></ion-progress-bar>
+
+    <!-- Default Progressbar with 50 percent -->
+    Barra com 50%:
+    <ion-progress-bar value="0.5"></ion-progress-bar>
+
+    <!-- Colorize Progressbar -->
+    Barra cor primária:
+    <ion-progress-bar color="primary" value="0.5"></ion-progress-bar>
+    Barra cor secundária:
+    <ion-progress-bar color="secondary" value="0.5"></ion-progress-bar>
+
+    <!-- Other types -->
+    Barra com buffer:
+    <ion-progress-bar value="0.25" buffer="0.5"></ion-progress-bar>
+    Barra Indeterminada:
+    <ion-progress-bar type="indeterminate"></ion-progress-bar>
+    Barra Indeterminada reversa:
+    <ion-progress-bar type="indeterminate" reversed="true"></ion-progress-bar>
+  </div>
+</ion-content>
