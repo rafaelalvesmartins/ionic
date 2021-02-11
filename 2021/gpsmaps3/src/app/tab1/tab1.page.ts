@@ -23,6 +23,8 @@ export class Tab1Page {
     this.estado = 'SP';
     this.chave = 'AIzaSyB8uF6LvpogRa1vhXUB7DhIYje9Nis0qFM';
     this.mapa = 'https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=400x400&markers=color:red|' + this.getEndereco() + '&key='+this.chave;
+
+    console.log(this.mapa);
   }
 
   getEndereco(){
