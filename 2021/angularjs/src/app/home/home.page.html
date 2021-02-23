@@ -18,7 +18,7 @@
     <ion-list>
       <ion-item>
         <ion-label position="fixed">Nome:</ion-label>
-       <ion-input  [(ngModel)]="name" (ionFocus)="evento($event)" placeholder="Entre com os valores"></ion-input>
+       <ion-input  [(ngModel)]="name" (ionChange)="evento($event)" placeholder="Entre com os valores"></ion-input>
       </ion-item>
       <ion-item>
         {{name}}
