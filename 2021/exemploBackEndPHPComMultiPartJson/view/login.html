@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <title>Login AdmUser</title>
+</head>
+
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ADMUSER</th>
+                </tr>
+            </thead>
+            <tbody>
+                <form method="POST" action="../src/controll/processa.usuario.php">
+                    <tr>
+                        <td><input type="text" placeholder="login" name="login" required/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" placeholder="senha" name="senha" required/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Acessar"/></td>
+                    </tr>
+                </form>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

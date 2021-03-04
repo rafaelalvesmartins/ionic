@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <title>Perfil de Administrador</title>
+</head>
+
+<body onload="carregaPessoas(),carregaUsuarios()">
+    <table>
+        <tr>
+            <td rowspan="2">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Perfil do Administrador</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">Nome: <input type="text" id="nome" size="50" /></td>
+                        </tr>
+                        <tr>
+                            <td align="left">Telefone: <input type="text" id="telefone" /></td>
+                            <td align="left">Login: <input type="text" id="login" /></td>
+                        </tr>
+                        <tr>
+                            <td align="left">Senha: <input type="password" id="senha" /></td>
+                            <td align="left">Confirma senha: <input type="password" id="csenha" /></td>
+                        </tr>
+                        <tr>
+                            <td align="right" colspan="2"><input type="button" value="Atualizar" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4">Gerenciar Pessoas</th>
+                        </tr>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bodyPessoas">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <form>
+                                <td>Auto</td>
+                                <td><input type="text" placeholder="Nome" name="nome"></td>
+                                <td><input type="text" placeholder="Telefone" name="telefone"></td>
+                                <td><input type="submit" value="Criar"></td>
+                            </form>
+                        </tr>
+                    </tfoot>
+                </table>
+            </td>
+        <tr>
+            <td>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4">Gerenciar Usuários</th>
+                        </tr>
+                        <tr>
+                            <th>Id</th>
+                            <th>Login</th>
+                            <th>Tipo</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bodyUsuarios">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <form>
+                                <td><input type="number" placeholder="id" name="id" style="width:50px"></td>
+                                <td><input type="text" placeholder="login" name="login">
+                                    <input type="password" placeholder="senha" name="senha">
+                                </td>
+                                <td><select name="tipo">
+                                        <option value="adm">Admin</option>
+                                        <option value="comum">Comum</option>
+                                    </select></td>
+                                <td><input type="submit" value="Criar"></td>
+                            </form>
+                        </tr>
+                    </tfoot>
+                </table>
+            </td>
+        </tr>
+        </tr>
+    </table>
+    <script src="perfiladm.js"></script>
+</body>
+
+</html>

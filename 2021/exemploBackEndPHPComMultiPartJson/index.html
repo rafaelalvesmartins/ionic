@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="refresh" content="0; URL='./view/login.html'" />
+</head>
+
+<body>
+    <script>
+        if (location.search.slice(1).split("=")[0] == "erro") {
+            msg = decodeURIComponent(location.search.slice(1).split("=")[1]);
+            window.location.href = "./view/login.html?erro="+msg
+        } else {
+            window.location.href = "./view/login.html"
+        }
+    </script>
+</body>
+
+</html>
