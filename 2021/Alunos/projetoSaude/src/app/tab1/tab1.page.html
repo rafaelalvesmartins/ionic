@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+      
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="row">
+    <div class="col">
+        Peso:
+        <input type="number" [(ngModel)]="peso" class="form-control" step="0.010"/> 
+    </div>
+    <div class="col">
+        Altura:
+        <input type="number" [(ngModel)]="altura" class="form-control" step="0.010"/> 
+    </div>
+ </div> 
+ <br>
+  
+  <div class="text-center">
+    <br>
+    <button type="button" name="button" (click)="calcularImc()"  class="btn btn outline-primary">Calcular</button>
+  </div>
+  <h3 class="text-center">Resultado: <b> {{imc.toFixed(2)}} </b></h3>
+
+  <div class="container" align="center">
+    <img src="../../assets/foto.jpeg">
+  </div>
+
+  <div class="text-center">
+    <br>
+    <ion-button color="primary" disabled={{disableButton}} >Primary</ion-button>
+  </div>
+  
+</ion-content>
