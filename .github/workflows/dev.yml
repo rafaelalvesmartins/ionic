@@ -1,0 +1,23 @@
+name: Dev
+
+on:
+  push:
+    branches:
+      - 'dev' # Change this to specific branches if needed, e.g., 'main', 'dev', etc.
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Upload files to FTP/SFTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: '185.27.134.11'
+          username: 'if0_36828978'
+          password: '0uj8GIcssuPGQda'
+          local-dir: ./ # The directory you want to upload. Adjust as needed.
+          server-dir: '/htdocs/dev/'
